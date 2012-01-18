@@ -1,0 +1,43 @@
+list_insert(l,x)
+{
+  if (l == NULL)
+  {
+    [x] = NULL;
+    return x;
+  }
+  else
+  {
+    if (*)
+    {
+      u = [l];
+      r = list_insert(u,x);
+      [l] = r;
+      return l;
+    }
+    else
+    {
+      [x] = l;
+      return x;
+    }
+  }
+}
+
+tailsort(h)
+{
+  ret = NULL;
+  if (h != NULL)
+  {
+    tail = [h];
+    [h] = NULL;
+    ret = tailsort(tail);
+    ret = list_insert(ret,h);
+  }
+  return ret;
+}		
+
+main()
+{
+  res = tailsort(x);
+}
+
+

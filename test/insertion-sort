@@ -1,0 +1,42 @@
+insert(l, x)
+{
+  elem = l;
+  prev = NULL;
+  while (elem != NULL)
+  {
+    if (*)
+    {
+      [x] = elem;
+      if (prev == NULL)
+        return x;
+      [prev] = x;
+      return l;
+    }
+    prev = elem;
+    elem = [elem];
+  }
+  [x] = elem;
+  if (prev == NULL)
+    return x;
+  [prev] = x;
+  return l;
+}
+
+insertionsort(x)
+{
+  h = x;
+  ret = NULL;
+  while (h != NULL)
+  {
+    cand = h;
+    h = [h];
+    [cand] = NULL;
+    ret = insert(ret, cand);
+  }
+  return ret;
+}
+
+main()
+{
+  res = insertionsort(x);
+}

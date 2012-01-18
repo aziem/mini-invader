@@ -1,0 +1,25 @@
+insert(l, x)
+{
+  new x;
+  elem = l;
+  prev = NULL;
+  while (elem != NULL)
+  {
+    if (*)
+    {
+      [x] = elem;
+      if (prev == NULL)
+        return x;
+      [prev] = x;
+      return l;
+    }
+    prev = elem;
+    elem = [elem];
+  }
+  [x] = elem;
+  if (prev == NULL)
+    return x;
+  [prev] = x;
+  return l;
+} 
+

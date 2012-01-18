@@ -1,0 +1,32 @@
+merge(p, q)
+{
+  if (p != NULL)
+  {
+    if (q != NULL)
+    {
+      if (*)
+      {
+        r = [p];
+        t = merge(r,q);
+        [p] = t;
+        return p;
+      }
+      else
+      {
+        r = [q];
+        t = merge(p,r);
+        [q] = t;
+        return q;
+      }
+    }
+    else
+      return p;
+  }
+  else
+    return q;
+}
+
+main()
+{
+  res = merge(x, y);
+}

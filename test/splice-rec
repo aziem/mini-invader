@@ -1,0 +1,18 @@
+splice(p,q)
+{
+  w = q;
+  if (p != NULL)
+  {
+    pn = [p];
+    r = splice(q, pn);
+    [p] = r;
+    w = p;
+  }
+  return w;
+}
+
+main()
+{
+  t = splice(x, y);
+  s = splice(t, z);
+}

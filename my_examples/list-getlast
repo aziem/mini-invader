@@ -1,0 +1,11 @@
+getlast(c) {
+	h = c;
+	while (h != NULL) {
+		p = [h];
+		if (p == NULL) {
+			return h;
+		}
+		h = [h];
+	}
+
+}

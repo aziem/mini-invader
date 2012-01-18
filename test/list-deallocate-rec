@@ -1,0 +1,15 @@
+list_deallocate(x)
+{
+  if (x != NULL)
+  {
+    t = x;
+    c = [x];
+    dispose t;
+    list_deallocate(c);
+  }
+}
+
+main()
+{
+  list_deallocate(x);
+}

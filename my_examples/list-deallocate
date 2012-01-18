@@ -1,0 +1,9 @@
+list_deallocate(c)
+{
+  while (c != NULL)
+  {
+    t = c;
+    c = [c];
+    dispose t;
+  }
+}

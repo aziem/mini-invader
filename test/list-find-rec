@@ -1,0 +1,17 @@
+find(x)
+{
+  if (x == NULL)
+    return NULL;
+  
+  if (*)
+    return x;
+
+  h = [x];
+  t = find(h);
+  return t;
+}
+
+main()
+{
+  res = find(x);
+}

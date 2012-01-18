@@ -1,0 +1,14 @@
+copy(c) 
+{
+  if (c == NULL) { 
+	z = NULL; 
+  } 
+  else {
+  	y = c; 
+        new z; 
+        [z] = NULL; 
+        w = z; 
+        y = [y]; 
+  while ( y != NULL) { new d; [d] = NULL; [w] = d; y = [y];}
+  }
+}

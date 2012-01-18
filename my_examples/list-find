@@ -1,0 +1,12 @@
+find(x)
+{
+  h = x;
+  while (h != NULL)
+  {
+    if (*) {
+	return h;
+    }
+    h = [h];
+  }
+}
+

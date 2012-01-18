@@ -1,0 +1,14 @@
+listseg_traverse(x,y)
+{
+  t = x;
+  if (t != y)
+  {
+    t = [t];
+    listseg_traverse(t,y);
+  }
+}
+
+main()
+{
+  listseg_traverse(x,y);
+}

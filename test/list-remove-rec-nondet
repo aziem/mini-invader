@@ -1,0 +1,28 @@
+list_remove(l)
+{
+  if (l != NULL)
+  {
+    if (*)
+    {
+      t = [l];
+      dispose l;
+      return t;
+    }
+    else
+    {
+      t = [l];
+      r = list_remove(t);
+      [l] = r;
+      return l;
+    }
+  }
+  else
+  {
+    return NULL;
+  }
+}
+
+main()
+{
+  res = list_remove(x);
+}

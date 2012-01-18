@@ -1,0 +1,50 @@
+quicksort(first, last)
+{
+  if (first == NULL)
+    return first;
+  if (first == last)
+    return first;
+
+  hd = first;
+  prev = first;
+  tl = [first];
+
+  while (tl != last)
+  {
+    if (*)
+    {
+      t = [tl];
+      [prev] = t;
+      [tl] = hd;
+      hd = tl;
+      tl = [prev];
+    }
+    else
+    {
+      prev = tl;
+      tl = [tl];
+    }
+  }
+
+  tl = [first];
+  [first] = NULL;
+  prev = NULL;
+
+  low = quicksort(hd,first);
+  high = quicksort(tl,last);
+
+  [first] = high;
+  return low;
+}			
+
+main()
+{
+  res = quicksort(x, NULL);
+}
+
+
+
+
+
+
+

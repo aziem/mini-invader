@@ -1,0 +1,36 @@
+list_append(x, y)
+{
+  if (x != NULL)
+  {
+    t = x;
+    n = [x];
+    while (n != NULL)
+    {
+      t = n;
+      n = [n];
+    }
+
+    [t] = y;
+    return x;
+  }
+  else
+  {
+    return y;
+  }
+}
+
+revapp(p)
+{
+  if (p == NULL)
+    return NULL;
+  pn = [p];
+  [p] = NULL;
+  t = revapp(pn);
+  tmp = list_append(t, p);
+  return tmp;
+}
+
+main()
+{
+  res = revapp(x);
+}

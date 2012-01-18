@@ -1,0 +1,14 @@
+
+traverse(x)
+{
+  if (x != NULL)
+  {
+    z = [x];
+    traverse(z);
+  }
+}
+
+main()
+{
+  traverse(y);
+}

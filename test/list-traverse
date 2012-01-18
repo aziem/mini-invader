@@ -1,0 +1,10 @@
+
+traverse(c)
+{
+  x = c;
+  while (x != NULL)
+  {
+    x = [x];
+  }
+}
+

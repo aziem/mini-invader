@@ -1,0 +1,31 @@
+
+merge(p,q)
+{
+  if (q == NULL)
+    return p;
+  else if (p == NULL)
+    return q;
+  else
+  {
+    if (*)
+    {
+      t = q;
+      q2 = [q];
+      p2 = p;
+    }
+    else
+    {
+      t = p;
+      p2 = [p];
+      q2 = q;
+    }
+    t2 = merge(p2,q2);
+    [t] = t2;
+    return t;
+  }
+}
+
+main()
+{
+  res = merge(x, y);
+}

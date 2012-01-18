@@ -1,0 +1,17 @@
+create()
+{
+  if (*)
+    return NULL;
+  else
+  {
+    new p;
+    q = create();
+    [p] = q;
+    return p;
+  }
+}
+
+main()
+{
+  res = create();
+}

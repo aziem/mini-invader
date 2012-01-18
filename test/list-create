@@ -1,0 +1,11 @@
+create()
+{
+  tmp = NULL;
+  head = NULL;
+  while (true)
+  {
+    new tmp;
+    [tmp] = head;
+    head = tmp;
+  }
+}

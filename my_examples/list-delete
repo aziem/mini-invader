@@ -1,0 +1,26 @@
+remove(l, x)
+{
+  elem = l;
+  prev = NULL;
+
+  while (elem != NULL)
+  {
+    if (elem == x)
+    {
+      if (prev == NULL)
+      {
+        t = [elem];
+        dispose elem;
+      }
+      else
+      {
+        t = [elem];
+        [prev] = t;
+        dispose elem;
+      }
+    }
+    prev = elem;
+    elem = [elem];
+  }
+}
+

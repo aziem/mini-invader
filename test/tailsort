@@ -1,0 +1,43 @@
+insert(l, x)
+{
+  elem = l;
+  prev = NULL;
+  while (elem != NULL)
+  {
+    if (*)
+    {
+      [x] = elem;
+      if (prev == NULL)
+        return x;
+      [prev] = x;
+      return l;
+    }
+    prev = elem;
+    elem = [elem];
+  }
+  [x] = elem;
+  if (prev == NULL)
+    return x;
+  [prev] = x;
+  return l;
+} 
+
+tailsort(h)
+{
+  ret = NULL;
+  if (h != NULL)
+  {
+    tail = [h];
+    [h] = NULL;
+    ret = tailsort(tail);
+    ret = insert(ret,h);
+  }
+  return ret;
+}		
+
+main()
+{
+  res = tailsort(x);
+}
+
+

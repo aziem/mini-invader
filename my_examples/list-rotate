@@ -1,0 +1,14 @@
+rotate(c) {
+	t = c;
+	c = [c];
+	h = c;
+	[t] = NULL;
+	while (h != NULL) {
+		p = [h];
+		if (p == NULL) {
+			[h] = t;
+			return c;
+		}
+		h = [h];
+	}
+}

@@ -1,0 +1,76 @@
+
+merge(p,q)
+{
+  if (q == NULL)
+    return p;
+  else if (p == NULL)
+    return q;
+  else
+  {
+    if (*)
+    {
+      t = q;
+      q2 = [q];
+      p2 = p;
+    }
+    else
+    {
+      t = p;
+      p2 = [p];
+      q2 = q;
+    }
+    t2 = merge(p2,q2);
+    [t] = t2;
+    return t;
+  }
+}
+
+split(p)
+{
+  if (p == NULL)
+    return NULL;
+  else
+  {
+    t1 = [p];
+    if (t1 == NULL)
+      return NULL;
+    else
+    {
+      t2 = [t1];
+      t3 = split(t2);
+      [p] = t2;
+      [t1] = t3;
+      return t1;
+    }
+  }
+}
+
+mergesort(p)
+{
+  if (p == NULL)
+    return NULL;
+  else
+  {
+    t = [p];
+    if (t == NULL)
+    {
+      return p;
+    }
+    else
+    {
+/*t = NULL;*/
+      q = split(p);
+      q1 = mergesort(q);
+      p1 = mergesort(p);
+/*p = NULL;
+q = NULL;*/
+      t = merge(p1,q1);
+      return t;
+    }
+  }
+}
+
+main()
+{
+  res = mergesort(x);
+}

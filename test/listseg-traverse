@@ -1,0 +1,10 @@
+
+traverse(x,y)
+{
+  t = x;
+  while (t != y)
+  {
+    t = [t];
+  }
+}
+

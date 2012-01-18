@@ -1,0 +1,4 @@
+reverse(c)
+{
+	goto 1;
+}

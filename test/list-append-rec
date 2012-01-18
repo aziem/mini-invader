@@ -1,0 +1,20 @@
+list_append(x, y)
+{
+  if (x != NULL)
+  {
+    t = [x];
+    tmp = list_append(t, y);
+    [x] = tmp;
+    return x;
+  }
+  else
+  {
+    return y;
+  }
+}
+
+main()
+{
+  xy = list_append(x, y);
+  res = list_append(xy, z);
+}

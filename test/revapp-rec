@@ -1,0 +1,30 @@
+append(x, y)
+{
+  if (x != NULL)
+  {
+    t = [x];
+    tmp = append(t, y);
+    [x] = tmp;
+    return x;
+  }
+  else
+  {
+    return y;
+  }
+}
+
+revapp(p)
+{
+  if (p == NULL)
+    return NULL;
+  pn = [p];
+  [p] = NULL;
+  t = revapp(pn);
+  tmp = append(t, p);
+  return tmp;
+}
+
+main()
+{
+  res = revapp(x);
+}

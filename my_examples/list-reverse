@@ -1,0 +1,11 @@
+reverse(c)
+{
+  p = NULL;
+  while (c != NULL)
+  {
+    n = [c];
+    [c] = p;
+    p = c;
+    c = n;
+  }
+}

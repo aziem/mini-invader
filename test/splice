@@ -1,0 +1,40 @@
+splice(x, y)
+{
+  p = x;
+  q = y;
+
+  if (p == NULL)
+    return q;
+  if (q == NULL)
+    return p;
+  
+  while (NULL == NULL)
+  {
+    t = q;
+    q = [t];
+    tmp = [p];
+    [t] = tmp;
+    [p] = t;
+    if (p == NULL)
+      return x;
+    p = [t];
+
+    if (q == NULL)
+      return x;
+    if (p == NULL)
+    {
+      [t] = q;
+      return x;
+    }
+  }
+  
+  if (p == NULL)
+    [t] = q;
+  return x;
+}
+
+main()
+{
+  t = splice(x, y);
+  s = splice(t, z);
+}

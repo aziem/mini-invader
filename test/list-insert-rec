@@ -1,0 +1,30 @@
+
+list_insert(l,x)
+{
+  if (l == NULL)
+  {
+    [x] = NULL;
+    return x;
+  }
+  else
+  {
+    if (*)
+    {
+      u = [l];
+      r = list_insert(u,x);
+      [l] = r;
+      return l;
+    }
+    else
+    {
+      [x] = l;
+      return x;
+    }
+  }
+}
+
+main()
+{
+  new x;
+  list_insert(l,x);
+}

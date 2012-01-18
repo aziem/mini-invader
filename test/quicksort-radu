@@ -1,0 +1,42 @@
+quicksort(first, last)
+{
+  mid = [first];
+  prev = [first];
+
+  if (mid == last)
+    return;
+
+  crt = [prev];
+  if (crt == last)
+    return;
+
+  while (crt != last)
+  {
+    if (*)
+    {
+      prev = crt;
+    }
+    else
+    {
+      t = [crt];
+      [prev] = t;
+      t = [first];
+      [crt] = t;
+      [first] = crt;
+    }
+    crt = [prev];
+  }
+
+  quicksort(mid,last);
+  quicksort(first,mid);
+}
+
+main()
+{
+  new y;
+  [y] = x;
+  quicksort(y, NULL);
+}
+
+
+

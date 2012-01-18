@@ -1,0 +1,42 @@
+list_insert(l,x)
+{
+  if (l == NULL)
+  {
+    [x] = NULL;
+    return x;
+  }
+  else
+  {
+    if (*)
+    {
+      u = [l];
+      r = list_insert(u,x);
+      [l] = r;
+      return l;
+    }
+    else
+    {
+      [x] = l;
+      return x;
+    }
+  }
+}
+
+insertionsort(x)
+{
+  h = x;
+  ret = NULL;
+  while (h != NULL)
+  {
+    cand = h;
+    h = [h];
+    [cand] = NULL;
+    ret = list_insert(ret, cand);
+  }
+  return ret;
+}
+
+main()
+{
+  res = insertionsort(x);
+}

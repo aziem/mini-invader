@@ -1,0 +1,16 @@
+list_append(x, y)
+{
+  if (x != NULL)
+  {
+    t = x;
+    n = [x];
+    while (n != NULL)
+    {
+      t = n;
+      n = [n];
+    }
+
+    [t] = y;
+  }
+}
+

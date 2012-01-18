@@ -1,0 +1,29 @@
+reverse(h)
+{
+  if (h != NULL)
+  {
+    t = [h];
+    if (t != NULL)
+    {
+      [h] = NULL;
+      r = reverse(t);
+      [t] = h;
+      return r;
+    }
+    return h;
+  }
+}
+
+main()
+{
+  y = reverse(x);
+  x = reverse(y);
+  y = reverse(x);
+  x = reverse(y);
+
+  y = reverse(x);
+  x = reverse(y);
+  y = reverse(x);
+  x = reverse(y);
+
+}

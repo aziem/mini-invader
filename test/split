@@ -1,0 +1,25 @@
+
+split(p)
+{
+  if (p == NULL)
+    return NULL;
+  else
+  {
+    t1 = [p];
+    if (t1 == NULL)
+      return NULL;
+    else
+    {
+      t2 = [t1];
+      t3 = split(t2);
+      [p] = t2;
+      [t1] = t3;
+      return t1;
+    }
+  }
+}
+
+main()
+{
+  res = split(x);
+}
