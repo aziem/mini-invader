@@ -1,3 +1,7 @@
+Toy implementation of a separation logic based static analysis tool. 
+
+See my_examples for syntax of program files and precondition file names.
+
 Usage: 
 
 mini-invader -f <file-name> -p <precondition-file-name>
